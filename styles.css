@@ -45,18 +45,21 @@ header h1 {
 
 .photo-frame {
     background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Zorgt ervoor dat de afgeronde hoeken ook de afbeelding beïnvloeden */
+    max-width: 100%;
 }
 
 /* Foto styling */
 .profile-photo {
-    max-width: 100%;
+    width: 100%;
+    max-width: 450px; /* Zorgt ervoor dat de afbeelding niet te groot wordt */
     height: auto;
-    border-radius: 10px;
+    border-radius: 20px; /* Ronde hoeken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -67,3 +70,4 @@ footer {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.7);
 }
+
